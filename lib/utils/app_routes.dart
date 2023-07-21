@@ -8,4 +8,6 @@ class AppRoutes {
   static const MEDIUM = '/medium';
   static const ADVANCED = '/advanced';
   static const PLAYER = '/player';
+  static const HOME_DETAIL_PAGE = '/homeDetailPage';
+  static const ALL_HISTORIES_PAGE = '/allHistoriesPage';
 }

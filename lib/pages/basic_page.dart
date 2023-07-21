@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import '../models/history.dart';
+
 class BasicPage extends StatelessWidget {
   const BasicPage({super.key});
 
@@ -24,6 +26,26 @@ class BasicPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),
+                  ),
+                  SizedBox(height: 50),
+                  Column(
+                    children: List.generate(histories.length, (index) {
+                      return Column(
+                        children: [
+                          InkWell(
+                            onTap: () {},
+                            child: Container(
+                              alignment: Alignment.center,
+                              width: double.infinity,
+                              height: 40,
+                              child: Card(
+                                child: Text(histories[index].title),
+                              ),
+                            ),
+                          ),
+                        ],
+                      );
+                    }),
                   ),
                 ],
               ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:loop_speak/pages/advanced_page.dart';
+import 'package:loop_speak/pages/all_histories_page.dart';
 import 'package:loop_speak/pages/basic_page.dart';
+import 'package:loop_speak/pages/home_detail_page.dart';
 import 'package:loop_speak/pages/home_page.dart';
 import 'package:loop_speak/pages/medium_page.dart';
 import 'package:loop_speak/pages/pronunciation.page.dart';
@@ -21,13 +23,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      //initialRoute: AppRoutes.ALL_HISTORIES_PAGE,
       routes: {
         AppRoutes.HOME: (ctx) => HomePage(),
         AppRoutes.PRONUNCIATION: (ctx) => Pronunciation(),
         AppRoutes.STEPS: (ctx) => Steps(),
         AppRoutes.BASIC: (ctx) => BasicPage(),
         AppRoutes.MEDIUM: (ctx) => MediumPage(),
-        AppRoutes.ADVANCED: (ctx) => AdvancedPage()
+        AppRoutes.ADVANCED: (ctx) => AdvancedPage(),
+        AppRoutes.HOME_DETAIL_PAGE: (ctx) => HomeDetailPage(),
+        AppRoutes.ALL_HISTORIES_PAGE: (ctx) => AllHistoriesPage()
       },
     );
   }

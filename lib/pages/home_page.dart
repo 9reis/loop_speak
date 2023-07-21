@@ -22,10 +22,7 @@ class HomePage extends StatelessWidget {
                 color: Colors.green,
                 child: Text(
                   'Loop Speack',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 50,
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
                 ),
               ),
             ),
