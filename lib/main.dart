@@ -44,6 +44,10 @@ class MyApp extends StatelessWidget {
         // AppRoutes.HOME_DETAIL_PAGE: (ctx) => HomeDetailPage(),
         // AppRoutes.ALL_HISTORIES_PAGE: (ctx) => AllHistoriesPage()
       },
+
+      home: StreamBuilder(
+        stream: ,
+      ),
     );
   }
 }

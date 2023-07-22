@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "847677302939",
+    "project_id": "helo-koala-teste",
+    "storage_bucket": "helo-koala-teste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847677302939:android:f1479213cd211344f3be3e",
+        "android_client_info": {
+          "package_name": "br.com.novereistechnology.loop_speak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847677302939-6bgikoe6from6umacp11ivo3880kcbl7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.novereistechnology.loop_speak",
+            "certificate_hash": "f31badae13f358e4117dcd69db8e5810e241be13"
+          }
+        },
+        {
+          "client_id": "847677302939-ach5ijdb7as0aosjgpbjbrt7n8olbpg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHMAh-n4TL3gDntlA6k_qCy0adRwpDQCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847677302939-ach5ijdb7as0aosjgpbjbrt7n8olbpg5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "847677302939-2l501u9ui2hj7jl50pi9skn13tcrlpef.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.novereistechnology.loopspeak"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
