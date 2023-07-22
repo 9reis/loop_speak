@@ -7,6 +7,8 @@ import 'package:loop_speak/pages/home_page.dart';
 import 'package:loop_speak/pages/medium_page.dart';
 import 'package:loop_speak/pages/pronunciation.page.dart';
 import 'package:loop_speak/pages/steps_page.dart';
+import 'package:loop_speak/screens/home_screen.dart';
+import 'package:loop_speak/screens/login_screen.dart';
 import 'package:loop_speak/utils/app_routes.dart';
 
 void main() {
@@ -25,14 +27,17 @@ class MyApp extends StatelessWidget {
       ),
       //initialRoute: AppRoutes.ALL_HISTORIES_PAGE,
       routes: {
-        AppRoutes.HOME: (ctx) => HomePage(),
-        AppRoutes.PRONUNCIATION: (ctx) => Pronunciation(),
-        AppRoutes.STEPS: (ctx) => Steps(),
-        AppRoutes.BASIC: (ctx) => BasicPage(),
-        AppRoutes.MEDIUM: (ctx) => MediumPage(),
-        AppRoutes.ADVANCED: (ctx) => AdvancedPage(),
-        AppRoutes.HOME_DETAIL_PAGE: (ctx) => HomeDetailPage(),
-        AppRoutes.ALL_HISTORIES_PAGE: (ctx) => AllHistoriesPage()
+        '/login': (context) => LoginScreen(),
+        '/home': (context) => HomeScreen(),
+
+        // AppRoutes.HOME: (ctx) => HomePage(),
+        // AppRoutes.PRONUNCIATION: (ctx) => Pronunciation(),
+        // AppRoutes.STEPS: (ctx) => Steps(),
+        // AppRoutes.BASIC: (ctx) => BasicPage(),
+        // AppRoutes.MEDIUM: (ctx) => MediumPage(),
+        // AppRoutes.ADVANCED: (ctx) => AdvancedPage(),
+        // AppRoutes.HOME_DETAIL_PAGE: (ctx) => HomeDetailPage(),
+        // AppRoutes.ALL_HISTORIES_PAGE: (ctx) => AllHistoriesPage()
       },
     );
   }
