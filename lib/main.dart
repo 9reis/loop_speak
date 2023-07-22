@@ -1,17 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:loop_speak/pages/advanced_page.dart';
-import 'package:loop_speak/pages/all_histories_page.dart';
-import 'package:loop_speak/pages/basic_page.dart';
-import 'package:loop_speak/pages/home_detail_page.dart';
-import 'package:loop_speak/pages/home_page.dart';
-import 'package:loop_speak/pages/medium_page.dart';
-import 'package:loop_speak/pages/pronunciation.page.dart';
-import 'package:loop_speak/pages/steps_page.dart';
+// import 'package:loop_speak/pages/advanced_page.dart';
+// import 'package:loop_speak/pages/all_histories_page.dart';
+// import 'package:loop_speak/pages/basic_page.dart';
+// import 'package:loop_speak/pages/home_detail_page.dart';
+// import 'package:loop_speak/pages/home_page.dart';
+// import 'package:loop_speak/pages/medium_page.dart';
+// import 'package:loop_speak/pages/pronunciation.page.dart';
+// import 'package:loop_speak/pages/steps_page.dart';
 import 'package:loop_speak/screens/home_screen.dart';
 import 'package:loop_speak/screens/login_screen.dart';
-import 'package:loop_speak/utils/app_routes.dart';
+// import 'package:loop_speak/utils/app_routes.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
